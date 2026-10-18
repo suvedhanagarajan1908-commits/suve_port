@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suvedha | IT Student & Aspiring Software Developer</title>
+  <meta name="description" content="Personal portfolio website for Suvedha, BTech Information Technology student at SKCET passionate about software development, Python, AI, and building real-world solutions." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand">
+        <span class="brand-badge">S</span>
+        <span class="brand-text">Suvedha<span class="brand-suffix">.dev</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="openResumeModalBtn" class="btn btn-primary btn-sm">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Resume</span>
+        </button>
+        <button id="mobileMenuToggle" class="mobile-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#resume" class="mobile-link">Resume</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <div class="mobile-socials">
+        <a href="https://github.com/suvedhan" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/suvedha-n" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:suvedhanagarajan1908@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero-section">
+    <div class="container hero-grid">
+      <!-- Left: Bio & Actions -->
+      <div class="hero-content">
+        <div class="kicker">
+          <span>BTech Information Technology</span>
+          <span class="dot">·</span>
+          <span class="highlight">Aspiring Software Developer</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Suvedha N</span>
+        </h1>
+
+        <p class="hero-tagline">
+          Building meaningful digital experiences through code and creativity.
+        </p>
+
+        <p class="hero-bio">
+          I'm an Information Technology student at Sri Krishna College of Engineering and Technology passionate about software development, problem-solving, and building practical projects. I'm currently looking for internship opportunities where I can learn, grow, and contribute.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore My Projects</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="#resume" class="btn btn-secondary">
+            <i class="fa-regular fa-file-pdf"></i>
+            <span>Download Resume</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Pudukkottai & Coimbatore, Tamil Nadu</span>
+          </div>
+          <span class="dot">·</span>
+          <a href="https://github.com/suvedhan" target="_blank" rel="noopener noreferrer" class="meta-link">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <span class="dot">·</span>
+          <a href="https://linkedin.com/in/suvedha-n" target="_blank" rel="noopener noreferrer" class="meta-link">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <span class="dot">·</span>
+          <a href="mailto:suvedhanagarajan1908@gmail.com" class="meta-link">
+            <i class="fa-regular fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Code Visualization Card -->
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="card-header">
+            <div class="window-dots">
+              <span class="dot-red"></span>
+              <span class="dot-amber"></span>
+              <span class="dot-green"></span>
+            </div>
+            <span class="filename">developer_profile.py</span>
+            <span class="runtime">Python 3.11</span>
+          </div>
+          <div class="card-body">
+            <pre class="code-block"><code><span class="token-keyword">class</span> <span class="token-class">SoftwareDeveloper</span>:
+    <span class="token-keyword">def</span> <span class="token-func">__init__</span>(self):
+        self.name = <span class="token-string">"Suvedha N"</span>
+        self.degree = <span class="token-string">"BTech IT (SKCET)"</span>
+        self.cgpa = <span class="token-number">9.26</span>
+        self.skills = [<span class="token-string">"Python"</span>, <span class="token-string">"C++"</span>, <span class="token-string">"Java"</span>, <span class="token-string">"SQL"</span>]
+        self.status = <span class="token-string">"Seeking Internship"</span>
+
+    <span class="token-keyword">def</span> <span class="token-func">build_impact</span>(self):
+        <span class="token-keyword">return</span> <span class="token-string">"Building robust real-world systems"</span></code></pre>
+            
+            <div class="avatar-strip">
+              <div class="avatar-box">
+                <span class="avatar-letter">SN</span>
+              </div>
+              <div class="avatar-info">
+                <h4>Suvedha N</h4>
+                <p>Information Technology · SKCET '26</p>
+                <div class="quick-tags">
+                  <span>CGPA: 9.26</span> · <span>Web Dev Intern</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4-Metric Highlight Strip -->
+    <div class="container">
+      <div class="metric-strip">
+        <div class="metric-card">
+          <div class="metric-value">9.26</div>
+          <div class="metric-label">Current CGPA</div>
+          <div class="metric-sub">Top-tier Academic Record</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">SKCET</div>
+          <div class="metric-label">Information Technology</div>
+          <div class="metric-sub">Coimbatore, Tamil Nadu</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Python & Web</div>
+          <div class="metric-label">NxtLogic Solutions</div>
+          <div class="metric-sub">Web Development Intern</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Ready</div>
+          <div class="metric-label">Internship Opportunities</div>
+          <div class="metric-sub">Software & Web Roles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">Profile Overview</div>
+        <h2 class="section-title">Passionate about transforming logic into impactful software solutions.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a dedicated BTech Information Technology undergraduate at Sri Krishna College of Engineering and Technology (SKCET) with a strong academic track record (CGPA 9.26). My technical foundation centers on building dependable software, exploring backend architectures with Python, and working with relational databases and modern web technologies.
+          </p>
+          <p>
+            Through hands-on internships and self-driven development, I have gained real-world exposure to Python-based web development, RESTful patterns, and modular UI design. I enjoy working on algorithmic problem solving in C, C++, and Java, while continually experimenting with intelligent systems and automation.
+          </p>
+          <p>
+            I am actively seeking software engineering and web development internship roles where I can collaborate with forward-thinking teams, solve high-impact problems, and rapidly expand my technical capabilities.
+          </p>
+
+          <div class="highlights-list">
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Strong academic standing with <strong>9.26 CGPA</strong></span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Hands-on Python web development intern experience</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Experience with C, C++, Python, Java & SQL</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Trilingual: English, Tamil, and Hindi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-pillars">
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="pillar-content">
+              <h3>Software & Web Development</h3>
+              <p>Writing clean, maintainable code across C, C++, Java, and Python. Experience developing backend logic, data structures, and responsive user interfaces.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="pillar-content">
+              <h3>Database Management & Systems</h3>
+              <p>Designing structured relational schemas, writing optimized SQL queries, and understanding DBMS principles for reliable persistent data storage.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="pillar-content">
+              <h3>AI Applications & Innovation</h3>
+              <p>Building conversational study tools (My Study AI) and document compliance systems (GeM Bid Verification) to solve real institutional challenges.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-rocket"></i></div>
+            <div class="pillar-content">
+              <h3>Adaptability & Quick Learning</h3>
+              <p>Fast to adopt new frameworks, libraries, and engineering workflows, with an analytical mindset honed through rigorous academics and teamwork.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">Technical Arsenal</div>
+        <h2 class="section-title">Skills, Technologies & Focus Areas</h2>
+        <p class="section-desc">Core programming competencies, databases, web technologies, and developer tooling with practical project exposure.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-bar">
+        <button class="filter-tab active" data-filter="all">All Skills</button>
+        <button class="filter-tab" data-filter="programming">Programming</button>
+        <button class="filter-tab" data-filter="database">Database</button>
+        <button class="filter-tab" data-filter="web">Web Development</button>
+        <button class="filter-tab" data-filter="tools">Tools</button>
+        <button class="filter-tab" data-filter="focus">Focus Areas</button>
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div class="skills-grid">
+        <div class="skill-card" data-category="programming">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Programming</h3>
+          </div>
+          <p class="skill-card-desc">Core algorithms, object-oriented concepts, and application logic</p>
+          <div class="tags-list">
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">C</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="database">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Database</h3>
+          </div>
+          <p class="skill-card-desc">Structured querying, relational data modeling, and schema normalization</p>
+          <div class="tags-list">
+            <span class="tag">SQL</span>
+            <span class="tag">DBMS</span>
+            <span class="tag">Relational Modeling</span>
+            <span class="tag">Normalization</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="web">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Web Development</h3>
+          </div>
+          <p class="skill-card-desc">Responsive layouts, client-side interactivity, and clean frontend markup</p>
+          <div class="tags-list">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Developer Tools</h3>
+          </div>
+          <p class="skill-card-desc">Version control workflows, development environments, and tooling</p>
+          <div class="tags-list">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Linux CLI</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="focus">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Other Interests & Focus</h3>
+          </div>
+          <p class="skill-card-desc">Machine learning fundamentals and exploratory research fields</p>
+          <div class="tags-list">
+            <span class="tag">Artificial Intelligence</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="focus">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-users"></i></div>
+            <h3>Languages & Soft Skills</h3>
+          </div>
+          <p class="skill-card-desc">Collaboration and multi-lingual communication competencies</p>
+          <div class="tags-list">
+            <span class="tag">Tamil</span>
+            <span class="tag">English</span>
+            <span class="tag">Hindi</span>
+            <span class="tag">Communication</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">Featured Work</div>
+        <h2 class="section-title">Practical Projects & Systems</h2>
+        <p class="section-desc">Software applications, machine learning pipelines, and backend systems built with Python and web technologies.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: My Study AI -->
+        <div class="project-card">
+          <div class="project-category">
+            <i class="fa-solid fa-robot"></i>
+            <span>AI & Web Development</span>
+          </div>
+          <h3 class="project-title">My Study AI</h3>
+          <h4 class="project-subtitle">Conversational Study Assistant Application</h4>
+          <p class="project-desc">
+            An AI-powered chatbot application inspired by ChatGPT, designed to help students interact with an AI assistant and get real-time learning support.
+          </p>
+          <ul class="project-bullets">
+            <li>Designed a simple chatbox-style interface for interactive question-and-answer conversations.</li>
+            <li>Focused on providing a user-friendly platform for students to ask questions and receive study assistance.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span> · <span>HTML</span> · <span>CSS</span> · <span>Conversational AI</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-sm btn-primary open-proj-details" data-proj="my-study-ai">
+              View Project <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="https://github.com/suvedhan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Fleet Management Expert System -->
+        <div class="project-card">
+          <div class="project-category">
+            <i class="fa-solid fa-car"></i>
+            <span>Python & Backend</span>
+          </div>
+          <h3 class="project-title">Fleet Management Expert System</h3>
+          <h4 class="project-subtitle">Expense Monitoring & Anomaly Detection</h4>
+          <p class="project-desc">
+            A Python-based system that tracks vehicle expenses, calculates cost per kilometre, identifies unusual expenses, and provides expense recommendations.
+          </p>
+          <ul class="project-bullets">
+            <li>Calculates fuel, maintenance, and operating cost metrics per kilometre.</li>
+            <li>Identifies spending outliers and provides automated expense recommendations.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span> · <span>Data Analysis</span> · <span>Rule-Based Systems</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-sm btn-primary open-proj-details" data-proj="fleet-expense-system">
+              View Project <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="https://github.com/suvedhan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: GeM Bid Compliance Verification -->
+        <div class="project-card">
+          <div class="project-category">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Academic Innovation</span>
+          </div>
+          <h3 class="project-title">GeM Bid Compliance Verification</h3>
+          <h4 class="project-subtitle">Automated Government Procurement Audit</h4>
+          <p class="project-desc">
+            An academic innovation project focused on automating the verification of government procurement bid documents, certificates, expiry dates, and compliance requirements using intelligent verification methods.
+          </p>
+          <ul class="project-bullets">
+            <li>Automates validation of tender compliance checklists, dates, and certificates.</li>
+            <li>Minimizes clerical oversights in procurement decisions with data analytics.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span> · <span>Machine Learning</span> · <span>Data Analysis</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-sm btn-primary open-proj-details" data-proj="gem-bid-compliance">
+              View Project <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="https://github.com/suvedhan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: AQI Monitor -->
+        <div class="project-card">
+          <div class="project-category">
+            <i class="fa-solid fa-wind"></i>
+            <span>Web & Data</span>
+          </div>
+          <h3 class="project-title">AQI & Air Quality Index Monitor</h3>
+          <h4 class="project-subtitle">Environmental Pollution Health Dashboard</h4>
+          <p class="project-desc">
+            Application that tracks and displays Air Quality Index (AQI) to help users monitor pollution levels and understand air quality metrics.
+          </p>
+          <ul class="project-bullets">
+            <li>Created a simple interface for viewing and understanding air-quality information.</li>
+            <li>Categorizes particulate pollution severity to assist healthy outdoor decisions.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span> · <span>HTML</span> · <span>CSS</span> · <span>Data Visualization</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-sm btn-primary open-proj-details" data-proj="aqi-monitor">
+              View Project <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="https://github.com/suvedhan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">Background & Credentials</div>
+        <h2 class="section-title">Experience & Education</h2>
+        <p class="section-desc">Industry internship exposure alongside consistent academic distinction in Information Technology.</p>
+      </div>
+
+      <div class="exp-edu-grid">
+        <!-- Internship Experience -->
+        <div class="exp-column">
+          <div class="column-header">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Internship Experience</span>
+          </div>
+
+          <div class="timeline-card">
+            <div class="card-meta">
+              <span class="period">Internship</span>
+              <span class="location"><i class="fa-solid fa-location-dot"></i> Tamil Nadu, India</span>
+            </div>
+            <h3 class="role-title">Web Development Intern</h3>
+            <h4 class="company-name">NxtLogic Software Solutions</h4>
+            <ul class="highlights">
+              <li>Worked on web development projects using Python, with exposure to backend logic and application structure.</li>
+              <li>Collaborated with the development team to build and test functional web components.</li>
+              <li>Gained practical understanding of Python-based web development workflows.</li>
+            </ul>
+          </div>
+
+          <div class="availability-card">
+            <span class="avail-kicker">Current Availability</span>
+            <h4>Seeking Software & Web Engineering Internships</h4>
+            <p>Ready to apply technical skills in Python, web development, and problem solving to contribute to real-world software products.</p>
+          </div>
+        </div>
+
+        <!-- Academic Education Timeline -->
+        <div class="edu-column">
+          <div class="column-header">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Academic Timeline</span>
+          </div>
+
+          <div class="timeline">
+            <!-- College -->
+            <div class="timeline-node">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="card-meta">
+                  <span class="period">2022 – 2026</span>
+                  <span class="score-badge">Current CGPA: 9.26</span>
+                </div>
+                <h3 class="role-title">Bachelor of Technology (B.Tech)</h3>
+                <h4 class="company-name">Sri Krishna College of Engineering and Technology (SKCET)</h4>
+                <p class="field-info">Department of Information Technology · Coimbatore, Tamil Nadu</p>
+                <p class="edu-notes">Consistently high academic standing across core CS/IT curricula, Data Structures, OOP, DBMS, and Python.</p>
+              </div>
+            </div>
+
+            <!-- Higher Secondary -->
+            <div class="timeline-node">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="card-meta">
+                  <span class="period">Completed</span>
+                  <span class="score-badge">94.67%</span>
+                </div>
+                <h3 class="role-title">12th Standard (Higher Secondary)</h3>
+                <h4 class="company-name">Mount Zion Matriculation Higher Secondary School</h4>
+                <p class="field-info">Pudukkottai, Tamil Nadu</p>
+              </div>
+            </div>
+
+            <!-- Secondary -->
+            <div class="timeline-node">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="card-meta">
+                  <span class="period">Completed</span>
+                  <span class="score-badge">94.00%</span>
+                </div>
+                <h3 class="role-title">10th Standard (Secondary School)</h3>
+                <h4 class="company-name">Bethel Matric Higher Secondary School</h4>
+                <p class="field-info">Tamil Nadu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <div class="container">
+      <div class="section-header resume-header-flex">
+        <div>
+          <div class="kicker">Curriculum Vitae</div>
+          <h2 class="section-title">Professional Resume</h2>
+          <p class="section-desc">Complete academic credentials, hands-on engineering internship, and practical software projects.</p>
+        </div>
+        <div class="resume-buttons">
+          <button id="downloadResumeBtn" class="btn btn-primary">
+            <i class="fa-solid fa-download"></i>
+            <span>Download Resume</span>
+          </button>
+          <button onclick="window.print()" class="btn btn-secondary">
+            <i class="fa-solid fa-print"></i>
+            <span>Print PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Clean Resume Sheet -->
+      <div class="resume-sheet">
+        <div class="resume-sheet-header">
+          <h2>SUVEDHA N</h2>
+          <div class="resume-contact-line">
+            <span>Pudukkottai, Tamil Nadu</span>
+            <span class="dot">•</span>
+            <span>8056924644</span>
+            <span class="dot">•</span>
+            <a href="mailto:suvedhanagarajan1908@gmail.com">suvedhanagarajan1908@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="resume-block">
+          <h3>PROFILE</h3>
+          <p>
+            B.Tech Information Technology student with a strong academic record (Current CGPA: 9.26) and hands-on experience in Python-based web development. Skilled in C, C++, Python, Java, HTML and CSS, with practical exposure through internship and academic projects. Seeking a software or web development internship to apply technical skills and gain real-world experience.
+          </p>
+        </div>
+
+        <div class="resume-block">
+          <h3>EDUCATION</h3>
+          <div class="resume-entry">
+            <div class="entry-row">
+              <strong>Sri Krishna College of Engineering and Technology</strong>
+              <span>Current CGPA: 9.26</span>
+            </div>
+            <div class="entry-sub">B.Tech – Information Technology</div>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-row">
+              <strong>Mount Zion Matriculation Higher Secondary School, Pudukkottai</strong>
+              <span>94.67%</span>
+            </div>
+            <div class="entry-sub">12th Standard</div>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-row">
+              <strong>Bethel Matric Higher Secondary School</strong>
+              <span>94%</span>
+            </div>
+            <div class="entry-sub">10th Standard</div>
+          </div>
+        </div>
+
+        <div class="resume-block">
+          <h3>INTERNSHIP EXPERIENCE</h3>
+          <div class="resume-entry">
+            <div class="entry-row">
+              <strong>Web Development Intern — NxtLogic Software Solutions</strong>
+            </div>
+            <ul class="resume-bullets">
+              <li>Worked on web development projects using Python, with exposure to backend logic and application structure.</li>
+              <li>Collaborated with the development team to build and test functional web components.</li>
+              <li>Gained practical understanding of Python-based web development workflows.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-block">
+          <h3>PROJECTS</h3>
+          <div class="resume-entry">
+            <div class="entry-row">
+              <strong>My Study AI</strong>
+              <span>Python, HTML, CSS</span>
+            </div>
+            <p>Chat-based study assistant application inspired by conversational AI tools such as ChatGPT, designed to help students interact with an AI assistant for study-related queries.</p>
+            <ul class="resume-bullets">
+              <li>Designed a simple chatbox-style interface for interactive question-and-answer conversations.</li>
+              <li>Focused on providing a user-friendly platform for students to ask questions and receive study assistance.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-row">
+              <strong>Expense Tracker / Fleet Management System</strong>
+              <span>HTML, CSS, Python</span>
+            </div>
+            <p>Application to record, categorize and track personal and vehicle expenses with clear spending breakdown and cost-per-kilometre calculation.</p>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-row">
+              <strong>AQI & Air Quality Index Monitor</strong>
+              <span>HTML, CSS, Python</span>
+            </div>
+            <p>Application that tracks and displays Air Quality Index (AQI) to help users monitor pollution levels.</p>
+          </div>
+        </div>
+
+        <div class="resume-block">
+          <h3>TECHNICAL SKILLS</h3>
+          <div class="resume-skills-list">
+            <div><strong>Programming:</strong> C, C++, Python, Java</div>
+            <div><strong>Web Technologies:</strong> HTML, CSS, JavaScript</div>
+            <div><strong>Database:</strong> SQL, DBMS</div>
+            <div><strong>Languages:</strong> Tamil, English, Hindi</div>
+            <div><strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving, Adaptability</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">Get In Touch</div>
+        <h2 class="section-title">Let's Connect & Collaborate</h2>
+        <p class="section-desc">Interested in discussing internship opportunities or engineering roles? Send a message or reach out directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Cards -->
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div class="contact-details">
+              <h4>Direct Email Address</h4>
+              <a href="mailto:suvedhanagarajan1908@gmail.com" class="contact-val">suvedhanagarajan1908@gmail.com</a>
+              <button id="copyEmailBtn" class="copy-btn">
+                <i class="fa-regular fa-copy"></i> Copy Email
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-details">
+              <h4>Phone Number</h4>
+              <a href="tel:8056924644" class="contact-val">+91 8056924644</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <span class="contact-val">Pudukkottai & Coimbatore, Tamil Nadu, India</span>
+            </div>
+          </div>
+
+          <div class="contact-socials-box">
+            <h4>Professional Profiles</h4>
+            <div class="social-links-list">
+              <a href="https://github.com/suvedhan" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                <span><i class="fa-brands fa-github"></i> GitHub / suvedhan</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://linkedin.com/in/suvedha-n" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                <span><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <h3>Send Direct Inquiry</h3>
+            <p class="form-sub">Fill in your details below to send a message directly to Suvedha.</p>
+
+            <div id="formStatus" class="form-status" style="display: none;"></div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" required placeholder="e.g. Recruiter / HR" />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email Address *</label>
+                <input type="email" id="email" required placeholder="name@company.com" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="e.g. Internship Inquiry / Software Developer Role" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" rows="5" required placeholder="Hello Suvedha, we reviewed your portfolio and would like to connect..."></textarea>
+            </div>
+
+            <div class="form-footer">
+              <span class="disclaimer">Direct dispatch via your email client to suvedhanagarajan1908@gmail.com</span>
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-badge">S</span>
+        <div>
+          <h4>Suvedha N</h4>
+          <p>BTech Information Technology · SKCET</p>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-actions">
+        <a href="https://github.com/suvedhan" target="_blank" rel="noopener noreferrer" class="footer-icon-btn"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/suvedha-n" target="_blank" rel="noopener noreferrer" class="footer-icon-btn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:suvedhanagarajan1908@gmail.com" class="footer-icon-btn"><i class="fa-regular fa-envelope"></i></a>
+        <button id="backToTopBtn" class="footer-icon-btn back-to-top" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; 2026 Suvedha N. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span id="modalCategory" class="modal-kicker">AI & Web Development</span>
+        <button id="closeModalBtn" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modalTitle">Project Title</h2>
+        <h4 id="modalSubtitle">Subtitle</h4>
+        <p id="modalDesc">Detailed description...</p>
+        <div class="modal-bullets-box">
+          <h5>Technical Highlights:</h5>
+          <ul id="modalBullets"></ul>
+        </div>
+        <div class="modal-tech-box">
+          <h5>Technologies:</h5>
+          <div id="modalTech" class="tags-list"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a id="modalGithubBtn" href="https://github.com/suvedhan" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <button id="modalCloseActionBtn" class="btn btn-primary btn-sm">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
